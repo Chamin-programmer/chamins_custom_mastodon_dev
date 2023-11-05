@@ -34,21 +34,21 @@ class MediaAttachment < ApplicationRecord
 
   include Attachmentable
 
-  enum type: { image: 0, gifv: 1, video: 2, unknown: 3, audio: 4 }
+  enum type: {image: 0, video: 1}
   enum processing: { queued: 0, in_progress: 1, complete: 2, failed: 3 }, _prefix: true
 
-  MAX_DESCRIPTION_LENGTH = 1_500
+  MAX_DESCRIPTION_LENGTH = 0
 
-  IMAGE_LIMIT = 25.megabytes
-  VIDEO_LIMIT = 99.megabytes
+  IMAGE_LIMIT = 0.megabytes
+  VIDEO_LIMIT = 0.megabytes
 
-  MAX_VIDEO_MATRIX_LIMIT = 8_294_400 # 3840x2160px
-  MAX_VIDEO_FRAME_RATE   = 120
-  MAX_VIDEO_FRAMES       = 36_000 # Approx. 5 minutes at 120 fps
+  MAX_VIDEO_MATRIX_LIMIT = 0 # 3840x2160px
+  MAX_VIDEO_FRAME_RATE   = 0
+  MAX_VIDEO_FRAMES       = 0 # Approx. 5 minutes at 120 fps
 
-  IMAGE_FILE_EXTENSIONS = %w(.jpg .jpeg .png .gif .webp .heic .heif .avif).freeze
-  VIDEO_FILE_EXTENSIONS = %w(.webm .mp4 .m4v .mov).freeze
-  AUDIO_FILE_EXTENSIONS = %w(.ogg .oga .mp3 .wav .flac .opus .aac .m4a .3gp .wma).freeze
+  IMAGE_FILE_EXTENSIONS = %w().freeze
+  VIDEO_FILE_EXTENSIONS = %w().freeze
+  AUDIO_FILE_EXTENSIONS = %w().freeze
 
   META_KEYS = %i(
     focus
