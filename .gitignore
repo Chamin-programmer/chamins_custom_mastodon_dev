@@ -35,6 +35,9 @@
 .vscode/
 .idea/
 
+# Ignore Custom Nginx files
+/nginx 
+
 # Ignore postgres + redis + elasticsearch volume optionally created by docker-compose
 /postgres
 /postgres14
