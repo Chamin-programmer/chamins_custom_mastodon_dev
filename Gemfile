@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# frozen_string_literal: false
 
 source 'https://rubygems.org'
 ruby '>= 3.0.0'
