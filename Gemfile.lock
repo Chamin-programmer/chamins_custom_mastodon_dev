@@ -36,6 +36,16 @@ GIT
       nokogiri (~> 1.5)
       omniauth (>= 1.2, < 3)
 
+GIT
+  remote: https://github.com/akane-blue/sidekiq.git
+  revision: 893d9c865aeb57211b494723b9e73f3b07606eed
+  ref: 893d9c865aeb57211b494723b9e73f3b07606eed
+  specs:
+    sidekiq (6.5.8)
+      connection_pool (>= 2.2.5, < 3)
+      rack (~> 2.0)
+      redis (>= 4.5.0, < 5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -671,10 +681,6 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     semantic_range (3.0.0)
-    sidekiq (6.5.8)
-      connection_pool (>= 2.2.5, < 3)
-      rack (~> 2.0)
-      redis (>= 4.5.0, < 5)
     sidekiq-bulk (0.2.0)
       sidekiq
     sidekiq-scheduler (5.0.3)
@@ -899,7 +905,7 @@ DEPENDENCIES
   sanitize (~> 6.0)
   scenic (~> 1.7)
   selenium-webdriver
-  sidekiq (~> 6.5)
+  sidekiq!
   sidekiq-bulk (~> 0.2.0)
   sidekiq-scheduler (~> 5.0)
   sidekiq-unique-jobs (~> 7.1)

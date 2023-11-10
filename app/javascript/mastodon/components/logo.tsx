@@ -1,7 +1,7 @@
 import logo from 'mastodon/../images/logo.png';
 
 export const WordmarkLogo: React.FC = () => (
-  <img src="./images/logo.png" height="32px" />
+  <img src="./images/chamin.png" height="32px" />
 );
 
 export const SymbolLogo: React.FC = () => (
